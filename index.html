@@ -1,36 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jardim em Foco - Blog de Flores</title>
+  <title>Jardim em Foco - Blog Botanico</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Jardim em Foco</h1>
-    <p>Dicas de cultivo, espécies e curiosidades do mundo botânico</p>
+
+  <header class="navbar">
+    <div class="logo">🌸 Jardim em Foco</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Espécies</a>
+      <a href="#">Dicas</a>
+      <a href="#">Sobre</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">🌙</button>
   </header>
 
-  <main class="container">
-    <article class="post">
-      <h2>Como cuidar de Orquídeas no inverno</h2>
-      <span class="data">Publicado em 19 de Agosto</span>
-      <p>As orquídeas necessitam de luz indireta e regas reduzidas durante as estações mais frias para evitar o apodrecimento das raízes.</p>
-      <a href="#" class="btn">Ler mais</a>
-    </article>
+  <section class="hero">
+    <h1>Boas-vindas ao Nosso Refúgio Verde</h1>
+    <p>Descubra segredos de cultivo, cuidados diários e a beleza das flores para transformar seu lar.</p>
+  </section>
 
-    <article class="post">
-      <h2>O significado dos Girassóis na decoração</h2>
-      <span class="data">Publicado em 15 de Agosto</span>
-      <p>Além de acompanharem o movimento do sol, os girassóis trazem energia positiva e vibração para ambientes internos.</p>
-      <a href="#" class="btn">Ler mais</a>
-    </article>
-  </main>
+  <div class="layout-container">
+    <main class="posts-grid">
+      
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=500" alt="Orquídeas">
+        <div class="card-content">
+          <span class="tag">Cuidados</span>
+          <h2>Como cuidar de Orquídeas no Inverno</h2>
+          <span class="date">19 de Agosto, 2026</span>
+          <p>As orquídeas necessitam de luz indireta e regas reduzidas durante as estações frias para evitar fungos nas raízes.</p>
+          <a href="#" class="read-more">Ler artigo →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=500" alt="Girassóis">
+        <div class="card-content">
+          <span class="tag">Decoração</span>
+          <h2>O Significado dos Girassóis no Ambiente</h2>
+          <span class="date">15 de Agosto, 2026</span>
+          <p>Aprenda a posicionar os girassóis dentro de casa para trazer luz, energia positiva e vivacidade aos cômodos.</p>
+          <a href="#" class="read-more">Ler artigo →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500" alt="Tulipas">
+        <div class="card-content">
+          <span class="tag">Guias</span>
+          <h2>Guia Prático para Cultivar Tulipas</h2>
+          <span class="date">10 de Agosto, 2026</span>
+          <p>Dicas de solo, adubação e controle de temperatura para manter suas tulipas sempre vistosas e saudáveis.</p>
+          <a href="#" class="read-more">Ler artigo →</a>
+        </div>
+      </article>
+
+    </main>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>Sobre o Blog</h3>
+        <p>Um espaço dedicado aos apaixonados por botânica, jardinagem e pela delicadeza das plantas.</p>
+      </div>
+
+      <div class="widget">
+        <h3>Newsletter</h3>
+        <p>Receba Dicas Semanalmente:</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Seu e-mail..." required>
+          <button type="submit">Inscrever</button>
+        </form>
+      </div>
+    </aside>
+  </div>
 
   <footer>
-    <p>&copy; 2026 Jardim em Foco. Todos os direitos reservados.</p>
+    <p>&copy; 2026 Jardim em Foco. Cultivando conexões com a natureza.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
